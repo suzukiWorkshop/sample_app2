@@ -8,3 +8,7 @@ end
 ならば /^"(.*?)"と表示されていること$/ do |test|
   page.should have_content(test)
 end
+
+もし /^問い合わせページを表示する$/ do
+  visit '/contact'
+end
